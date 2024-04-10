@@ -45,7 +45,7 @@ function AccessGrant({ uid }) {
         />
         <button
           type="submit"
-          className="bg-[#1a1635] text-white px-3 py-2 rounded-md mt-5 mb-3"
+          className="bg-[#1a1635] text-white px-3 py-2 rounded-md mt-5 mb-3  hover:text-slate-900 hover:bg-blue-400"
         >
           Give Access
         </button>

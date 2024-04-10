@@ -82,6 +82,7 @@ const Signup = () => {
   return (
     // <Layout>
     <div className="flex flex-col justify-center items-center h-screen w-screen text-[white] font-semibold">
+       <div className="bg-blue-500 rounded-md h-90% w-90% mx-10 my-10 px-11 py-11 shadow-2xl">
       <form
         onSubmit={handleSubmit}
         className="bg-blue-500 py-3 rounded-lg flex flex-col px-5"
@@ -135,7 +136,7 @@ const Signup = () => {
             />
             {/*  */}
             <select
-              className="bg-transparent w-[200px] text-white font-normal ml-3 outline-none placeholder:text-white text-xl my-2 border-b-2"
+              className="bg-transparent  text-white font-normal ml-2 outline-none placeholder:text-white text-xl my-2 border-b-2"
               value={gender}
               onChange={(e) => setGender(e.target.value)}
               required
@@ -170,7 +171,7 @@ const Signup = () => {
         {otpScreen ? (
           <button
             type="submit"
-            className="bg-[#1a1635] px-3 py-2 rounded-md mt-5 mb-3"
+            className="bg-[#1a1635] px-3 py-2 rounded-md mt-5 mb-3  hover:text-slate-900 hover:bg-blue-400"
           >
             Submit
           </button>
@@ -182,16 +183,17 @@ const Signup = () => {
                 setOtpScreen(true);
               }
             }}
-            className="bg-[#1a1635] px-3 py-2 rounded-md mt-5 mb-3"
+            className="bg-[#1a1635] px-3 py-2 rounded-md mt-5 mb-3  hover:text-slate-900 hover:bg-blue-400"
           >
             Verify OTP
           </button>
         )}
       </form>
       <br />
-      <p>
-        Already have an account? <Link to={"/login"}>Signin</Link>{" "}
+      <p className="flex  justify-center items-center">
+        Already have an account? <Link to={"/login"} className="px-2  hover:text-slate-900">Signin</Link>{" "}
       </p>
+      </div>
     </div>
     // </Layout>
   );
