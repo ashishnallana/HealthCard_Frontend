@@ -40,22 +40,22 @@ function ReportsList({ id }) {
   }, []);
 
   return (
-    <div>
-      All Reports
+    <div className="mt-3 px-3" >
+       <h1 className="px-3 text-xl font-semibold">ALL REPORTS</h1>
       <div>
         {reports.map((e, i) => (
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 m-2 bg-black text-white px-2 py-1 rounded-md text-md  hover:text-slate-900 hover:bg-blue-700">
             <p>org id : {e.org_id}</p>
             {e.files.map((f, j) => (
               <a
                 href={f}
                 target="_blank"
-                className="m-2 bg-black text-white px-2 py-1 rounded-md"
+                className="text-sm"
               >
                 file {j + 1}
               </a>
             ))}
-            <p>{dateFormatter(e.updatedAt)}</p>
+            <p className="text-sm flex ">{dateFormatter(e.updatedAt)}</p>
           </div>
         ))}
       </div>
