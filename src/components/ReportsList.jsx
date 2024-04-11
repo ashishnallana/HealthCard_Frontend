@@ -40,21 +40,23 @@ function ReportsList({ id }) {
   }, []);
 
   return (
-    <div className="mt-3 px-3" >
-       <h1 className="px-3 text-xl font-semibold">ALL REPORTS</h1>
+    <div className="mt-3 px-3">
+      <h1 className="px-3 text-xl font-semibold">ALL REPORTS</h1>
       <div>
         {reports.map((e, i) => (
-          <div className="flex flex-col space-y-2 m-2 bg-black text-white px-2 py-1 rounded-md text-md  hover:text-slate-900 hover:bg-blue-700">
-            <p>org id : {e.org_id}</p>
-            {e.files.map((f, j) => (
-              <a
-                href={f}
-                target="_blank"
-                className="text-sm"
-              >
-                file {j + 1}
-              </a>
-            ))}
+          <div className="flex flex-col space-y-2 m-2 bg-white text-black px-2 py-1 rounded-md text-md  hover:text-white hover:bg-blue-700">
+            {e.org_name ? <p>{e.org_name}</p> : <p>org id : {e.org_id}</p>}
+            <div className="flex space-x-3">
+              {e.files.map((f, j) => (
+                <a
+                  href={f}
+                  target="_blank"
+                  className="text-sm bg-black text-white px-2 py-1 rounded-md"
+                >
+                  file {j + 1}
+                </a>
+              ))}
+            </div>
             <p className="text-sm flex ">{dateFormatter(e.updatedAt)}</p>
           </div>
         ))}
