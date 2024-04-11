@@ -6,7 +6,7 @@ function Card({ data }) {
       <div className="flex flex-col space-y-3">
         <img
           className="h-[80px] w-[80px] rounded-md"
-          src="https://i.pinimg.com/736x/83/3f/aa/833faaae7290747ea93a4c8b3f09b52b.jpg"
+          src="https://toppng.com/uploads/preview/icons-logos-emojis-user-icon-png-transparent-11563566676e32kbvynug.png"
           alt=""
         />
         <div>
@@ -16,7 +16,6 @@ function Card({ data }) {
           <h2 className="text-md">Mobile No: {data.mobileno}</h2>
           <h2 className="text-md">Aadhar No: {data.aadharno}</h2>
           <h2 className="text-md">Email: {data.email}</h2>
-          
         </div>
       </div>
       <div className="flex flex-col justify-between">
@@ -28,7 +27,7 @@ function Card({ data }) {
           <p className="text-[8px] mt-2">{data._id}</p>
         </div>
         <img src="" />
-        <p className="text-sm flex-end" >HealthCard.in</p>
+        <p className="text-sm flex-end">HealthCard.in</p>
       </div>
     </div>
   );
