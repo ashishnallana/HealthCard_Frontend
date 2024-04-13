@@ -14,7 +14,6 @@ To set up the user portal locally, follow these steps:
 ```dotenv
 REACT_APP_SERVER_API=<url_backend_server>
 REACT_APP_ORG_PORTAL=<url_organisation_portal>
-Replace the placeholders with the appropriate URLs for your backend server and the health organization portal.
 ```
-
 Replace the placeholders with the appropriate URLs for your backend server and the health organization portal.
+
