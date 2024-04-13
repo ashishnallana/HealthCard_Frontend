@@ -17,3 +17,7 @@ REACT_APP_ORG_PORTAL=<url_organisation_portal>
 ```
 Replace the placeholders with the appropriate URLs for your backend server and the health organization portal.
 
+## Repositories
+
+- [Organisations's Portal Repo](https://github.com/ashishnallana/HealthCard_Frontend_Org): This repository contains the frontend code for the health organization portal.
+- [Server Repo](https://github.com/ashishnallana/HealthCard_Backend): This repository contains the backend code for the healthcard app.
